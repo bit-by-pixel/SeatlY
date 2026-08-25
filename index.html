@@ -5,10 +5,42 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1>ONLINE SEAT BOOKING</h1>
-            <P>Click on the seat for booking it</P>
-        </header>
+       
+        
+
+        <div class="theater-container">
+            <header>
+                <h1>CINEMA SEAT BOOKING</h1>
+                <P>Hover on the seat for Seat-numbers</P>
+            </header>
+            <div class="tiers">
+                    <span class="tier lower">Lower-Tier (100₹)</span>
+                    <span class="tier middle">Middle-Tier (200₹)</span>
+                    <span class="tier upper">Upper-Tier (500₹)</span>
+                    <span class="tier recliner">Recliner (1000₹)</span>
+
+                </div>
+
+            <div class="screen-container">
+                <div class="screen">SCREEN</div>
+            </div>
+                
+                <div id="seatingarea" class="seatingarea"></div>
+
+                <div class="availability">
+                    <div class="item"><span class="box available"></span>Available</div>
+                    <div class="item"><span class="box selected"></span>Selected</div>
+                    <div class="item"><span class="box occupied"></span>Occupied</div>
+                </div>
+                
+                <div class="checkout">
+                    <p>Selected Seats: <span id="seat-list">-</span></p>
+                    <h3>Total Price: <span id="total-price">0</span>₹</h3>
+                    <button id="btn" disabled>Confirm Booking</button>
+                </div>
+        </div>
+  <script src="script.js"></script>
+
     </body>
 </html>
 
