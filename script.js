@@ -102,5 +102,3 @@ bookBtn.addEventListener("click", () => {
 });
 
 theater();
-
-/* remove innerHMTL */
